@@ -12,4 +12,10 @@ query getAllFilesFromSamePath(\$filePath: String!,\$traverseFiles: Boolean \$isJ
   )
 }
 ''';
+
+static const   String jobCardReport = '''
+query jobCardReport(\$data: JobCardReportInput) {
+  jobCardReport(data: \$data)
+}
+''';
 }

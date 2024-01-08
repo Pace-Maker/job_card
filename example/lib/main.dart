@@ -4,6 +4,8 @@ import 'package:graphql_config/graphql_config.dart';
 import 'screens/login_screen.dart';
 import 'package:secure_storage/secure_storage.dart';
 import 'package:sizer/sizer.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:job_card/core/bloc/bloc/attachment_selection_bloc.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -17,24 +19,27 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return Sizer(
-      builder: (context, orientation, deviceType) => GraphQlProviderWidget(
-        client: ValueNotifier(
-          GrapghQlClientServices().getClient(
-            timeZone: "asia/kolkata",
-            isConnectedinStaging: true,
-            exceptionHandler: () async {
-              // UserAuthHelpers().logoutHelper();
-            },
+    return BlocProvider(
+      create: (context) => AttachmentSelectionBloc(),
+      child: Sizer(
+        builder: (context, orientation, deviceType) => GraphQlProviderWidget(
+          client: ValueNotifier(
+            GrapghQlClientServices().getClient(
+              timeZone: "asia/kolkata",
+              isConnectedinStaging: true,
+              exceptionHandler: () async {
+                // UserAuthHelpers().logoutHelper();
+              },
+            ),
           ),
-        ),
-        child: MaterialApp(
-          title: 'Flutter Demo',
-          routes: {
-            LoginScreen.id: (context) => LoginScreen(),
-            HomeScreen.id: (context) => const HomeScreen(),
-          },
-          initialRoute: LoginScreen.id,
+          child: MaterialApp(
+            title: 'Flutter Demo',
+            routes: {
+              LoginScreen.id: (context) => LoginScreen(),
+              HomeScreen.id: (context) => const HomeScreen(),
+            },
+            initialRoute: LoginScreen.id,
+          ),
         ),
       ),
     );

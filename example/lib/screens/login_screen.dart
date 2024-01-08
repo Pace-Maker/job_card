@@ -65,8 +65,7 @@ class LoginScreen extends StatelessWidget {
                   );
 
                   if (errorMessage.isEmpty) {
-                    // Navigate to home screen
-                    // SharedPrefrencesServices().storerememberMe(true);
+                  
                     // ignore: use_build_context_synchronously
                     Navigator.of(context).pushReplacementNamed(HomeScreen.id);
                   } else {
