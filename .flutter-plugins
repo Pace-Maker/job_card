@@ -1,11 +1,11 @@
 # This is a generated file; do not edit or check into version control.
 connectivity_plus=/Users/mansoor/.pub-cache/hosted/pub.dev/connectivity_plus-3.0.6/
 device_info_plus=/Users/mansoor/.pub-cache/hosted/pub.dev/device_info_plus-9.1.2/
-flutter_secure_storage=/Users/mansoor/.pub-cache/hosted/pub.dev/flutter_secure_storage-8.1.0/
+flutter_secure_storage=/Users/mansoor/.pub-cache/hosted/pub.dev/flutter_secure_storage-9.1.1/
 flutter_secure_storage_linux=/Users/mansoor/.pub-cache/hosted/pub.dev/flutter_secure_storage_linux-1.2.1/
 flutter_secure_storage_macos=/Users/mansoor/.pub-cache/hosted/pub.dev/flutter_secure_storage_macos-3.1.0/
-flutter_secure_storage_web=/Users/mansoor/.pub-cache/hosted/pub.dev/flutter_secure_storage_web-1.2.0/
-flutter_secure_storage_windows=/Users/mansoor/.pub-cache/hosted/pub.dev/flutter_secure_storage_windows-2.1.1/
+flutter_secure_storage_web=/Users/mansoor/.pub-cache/hosted/pub.dev/flutter_secure_storage_web-1.2.1/
+flutter_secure_storage_windows=/Users/mansoor/.pub-cache/hosted/pub.dev/flutter_secure_storage_windows-3.1.2/
 gallery_saver=/Users/mansoor/.pub-cache/hosted/pub.dev/gallery_saver-2.3.2/
 open_file_plus=/Users/mansoor/.pub-cache/hosted/pub.dev/open_file_plus-3.4.1+1/
 package_info_plus=/Users/mansoor/.pub-cache/hosted/pub.dev/package_info_plus-4.2.0/
